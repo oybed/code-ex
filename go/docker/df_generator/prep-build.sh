@@ -8,13 +8,14 @@ then
 fi 
 
 # Is this a valid workaround ??
-export GOROOT_BOOTSTRAP=$GOROOT
+# export GOROOT_BOOTSTRAP=$GOROOT
 
 export GOARCH=386
 
 echo "Preparing builds for Linux(386)"
 export GOOS=linux
-cd $GOROOT/src; ./make.bash --no-clean
+# cd $GOROOT/src; ./make.bash --no-clean
+cd $GOROOT/src; ./make.bash
 
 echo "Preparing builds for OS X/Darwin(386)"
 export GOOS=darwin
