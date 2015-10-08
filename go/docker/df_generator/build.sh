@@ -1,5 +1,18 @@
 #!/bin/bash
 
+#
+# Script used to control the build
+# 
+# This script builds for 3 different Operating Systems:
+# - Linux (i386)
+# - OS X (i386)
+# - Windows (i386)
+#
+# SPECIAL CONSIDERATIONS
+# - Ensure the build environment is correctly configured for successful builds
+#   - i.e.: use the "pre-build.sh" script to setup the build machine
+#
+
 BIN=df_gen
 DESTDIR=bin
 
